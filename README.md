@@ -6,4 +6,4 @@
 É um projeto aonde eu tento utilizar todas as funções que vou aprendendo em JS.
 
 - [somador_ex](https://github.com/fabiocf1/Aprendizado-em-Javascript/blob/main/somador_ex.html)</br>
-É um projeto aonde você vai poder somar numeros e o resultado vai aparecer no site.
+É um projeto aonde você pode somar numeros e o resultado vai aparecer no site.
