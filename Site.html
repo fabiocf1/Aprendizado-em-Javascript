@@ -20,19 +20,24 @@
     </style>
 </head>
 <body>
-  <h1>Bem vindo ao meu site de testes `${nome}`.</h1> 
-  <p>Aqui eu estou testando todas as funcionalidades que aprendo em JS.</p>
+  <h1>Bem vindo ao meu site de testes.</h1> 
+  <p id="frase1">Aqui eu estou testando todas as funcionalidades que aprendo em JS.</p>
   <p style="font-family:courier"> Como podem ver, está tudo bagunçado, mas serve muito bem com area de testes!</p>
+  <p id="digitenome">DIGITE O SEU NOME:</p>
+  <input type="text" name="text1" id="text1">
+  <input type="button">
   <script>
-      //var n1 = Number(window.prompt('Digite um numero: '))
-      //var n2 = Number(window.prompt('Digite outro numero: '))
-      //var s = n1 + n2
-      //window.alert (`A soma entre ${n1} e ${n2} é: ${s}`)
-      var nome = window.prompt ('Qual é o seu nome? ')
-      document.write (`Olá ${nome}! Obrigado por visitar o meu site.</br>`)
-      document.write (`Seu nome tem ${nome.length} letras<br/>`)
-      document.write (`Seu nome todo em <strong>maiusculo</strong> é: ${nome.toUpperCase()}<br/>`)
-      document.write (`Seu nome todo em <stong>minusculo</strong> é: ${nome.toLowerCase()}<br/>`)
-</script>
+     
+      //var nome = window.prompt ('Qual é o seu nome? ')
+      var text1 = document.querySelector('p#text1')
+      document.write (`Olá ${text1}! Obrigado por visitar o meu site.</br>`)
+      //document.write (`Olá ${nome}! Obrigado por visitar o meu site.</br>`)
+      //document.write (`Seu nome tem ${nome.length} letras<br/>`)
+      //document.write (`Seu nome todo em <strong>maiusculo</strong> é: ${nome.toUpperCase()}<br/>`)
+      //document.write (`Seu nome todo em <stong>minusculo</strong> é: ${nome.toLowerCase()}<br/>`)
+      frase1.style.color = 'blue' //alterando a cor do paragrafo pelo JS.
+      digitenome.style.color = 'green'
+       
+   </script>
 </body>
 </html>
