@@ -23,20 +23,23 @@
   <h1>Bem vindo ao meu site de testes.</h1> 
   <p id="frase1">Aqui eu estou testando todas as funcionalidades que aprendo em JS.</p>
   <p style="font-family:courier"> Como podem ver, está tudo bagunçado, mas serve muito bem com area de testes!</p>
-  <p id="digitenome">DIGITE O SEU NOME:</p>
-  <input type="text" name="text1" id="text1">
-  <input type="button">
+  Digite o seu primeiro nome: <p><input type="text" name=txtnome id=txtnome>
+  <input type="button" value="OK" onclick="calcular()">
+  <div id="nome"></div>
+  
+  
   <script>
-     
-      //var nome = window.prompt ('Qual é o seu nome? ')
-      var text1 = document.querySelector('p#text1')
-      document.write (`Olá ${text1}! Obrigado por visitar o meu site.</br>`)
-      //document.write (`Olá ${nome}! Obrigado por visitar o meu site.</br>`)
-      //document.write (`Seu nome tem ${nome.length} letras<br/>`)
-      //document.write (`Seu nome todo em <strong>maiusculo</strong> é: ${nome.toUpperCase()}<br/>`)
-      //document.write (`Seu nome todo em <stong>minusculo</strong> é: ${nome.toLowerCase()}<br/>`)
-      frase1.style.color = 'blue' //alterando a cor do paragrafo pelo JS.
-      digitenome.style.color = 'green'
+      function calcular() {
+        var txtnome = window.document.querySelector("input#txtnome").value //nao esqueca de colocar o .value
+        var nome = window.document.querySelector("div#nome")
+        nome.innerHTML += `<p>Ola <strong>${txtnome}</strong>, seja bem vindo ao site!</p>`
+        nome.innerHTML += `Seu nome tem ${txtnome.length} letras </br>`
+        nome.innerHTML += `Seu nome todo em MAIUSUCULO é: <strong>${txtnome.toUpperCase()}</strong></br>`
+        nome.innerHTML += `Seu nome todo em minusculo é: <strong>${txtnome.toLowerCase()}</strong><br/>`
+      }
+            
+    frase1.style.color = 'blue' //alterando a cor do paragrafo pelo JS.
+    
        
    </script>
 </body>
