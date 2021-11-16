@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: rgb(211, 137, 11);
+    font: normal 20pt Arial;
+}
+
+header {
+    color: rgb(9, 190, 9);
+    text-align: center;
+    font: normal 25pt Arial;
+    padding: 2%
+}
+
+section {
+    background-color: rgb(34, 43, 38);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin:auto;
+    box-shadow: 3px 3px 3px 3px rgb(224, 21, 21)
+}
+
+div {
+    padding: 8px;
+}
+
+p {
+    color: brown;
+    text-align: center;
+    font: normal 15pt Arial;
+}
