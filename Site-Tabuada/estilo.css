@@ -1,5 +1,5 @@
 body {
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
     font: normal 15pt Arial;
 }
 
@@ -10,18 +10,19 @@ header {
 }
 
 section {
-    background-color: cornsilk;
+    background-color: rgb(233, 226, 198);
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
-
+    box-shadow: 5px 5px 10px rgba(34, 190, 3, 0.637);
+    
 }
 
 footer {
     color: white;
     text-align: center;
     font-style: italic;
-
+    font-size: small;
+    padding: 15px;
 }
